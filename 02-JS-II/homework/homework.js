@@ -46,11 +46,11 @@ function devolverString(str) {
     // De lo contrario, devuelve "false"
     // Tu código:
     var sonIguales = x, y;
-    if x === y {
-      console.log 'Son iguales';
-      return false;
+    if  (x === y) {
+      
+      return true;
     }
-    return sonIguales;
+    return false;
   }
   
   function tienenMismaLongitud(str1, str2) {

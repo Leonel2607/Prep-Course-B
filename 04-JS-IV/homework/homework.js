@@ -3,14 +3,14 @@
 function crearGato (nombre, edad) {
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
   // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el argumento "edad"
-  // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
+  // Agrega un método (function) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
   var object = {
     nombre: nombre,
     edad: edad,
     meow: function () {
-      return "meow!";
+      return "Meow!";
     }
   }
   return object;
@@ -26,7 +26,7 @@ function agregarPropiedad (objeto, property) {
 }
 
 function invocarMetodo (objeto, metodo) {
-  // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
+  // "metodo" es una cadena que contiene el nombre de un método (function) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
@@ -65,7 +65,7 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if(usuario.email === null || usuario.email === undefined) return false
+  if(usuario.email === null || usuario.email === undefined) return false;
   else return true
 }
 
@@ -74,8 +74,9 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(usuario.[propiedad] === null || usuario.[propiedad] === undefined) return false
-  else return true;
+  if (usuario.propiedad === null || usuario.propiedad === undefined) return false;
+
+  else  return true;
 }
 
 function verificarPassword (usuario, password) {
@@ -110,7 +111,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  usuario.foreach(element => {
+  usuarios.foreach(element => {
     element.esPremium = true
   });
 }
